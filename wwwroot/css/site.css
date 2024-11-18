@@ -1,0 +1,378 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    margin-bottom: 60px;
+    background-color: #e6f2f1;
+}
+
+.navbar{
+  background-color: #77c4b0 ;
+}
+
+.container-fluid {
+  background-color: #77c4b0;
+}
+
+.highlight_1 {
+  color: #ffffff;
+}
+
+.highlight {
+  color: #8a77c4;
+}
+
+.nav-item {
+  text-decoration: underline;
+}
+
+.home_container {
+    width: 100%;
+    margin: auto;
+}
+
+.index {
+    background-color: #77c4b0;
+}
+
+.home_bar {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    padding: 5px 10px;
+    background: #ffff;
+    color: #77c4b0;
+    border: 2px solid #77c4b0;
+}
+
+.home_image {
+    width: 100%;
+    height: 400px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+}
+
+.image-image {
+    width: 180vh;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    display: block;
+    left: 0;
+}
+
+
+
+.content {
+    /*position: relative;
+    margin-top: 148px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 5px 10px;
+    background: #77c4b0;
+    color: #000;*/
+
+    /*position: fixed;
+    margin-top: 145px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 5px 10px;
+    background: #77c4b0;
+    color: #000;*/
+
+    background-color: #77c4b0;
+    padding: 20px 20px;
+    margin-top: 145px;
+    color: #000;
+    width: 100%;
+}
+
+.home_illustration {
+    float: right;
+    width: 30%;
+}
+
+/*.home_section {
+    position: absolute;
+    width: 75%;
+    left: 15%;
+    top: 20%;
+    background-color: #77c4b0;
+    padding: 30px;
+    
+    /*margin-bottom: 20px;*/
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.highlight {
+  color: #8a77c4;
+}
+
+.bar {
+    background-color: #77c4b0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    transition: 0.5s ease;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    left: 0;
+    top: 80px;
+}
+
+.bar h1 {
+  font-size: 18px;
+  color: #ffff;
+  font-weight: 200;
+  text-align: right;
+  padding: 25px 0;
+  padding-right: 30px;
+  pointer-events: none;
+}
+
+.bar ul li{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.bar ul li a {
+    color: #ffff;
+    font-weight: 500;
+    padding: 5px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+.bar ul li:hover a {
+    color: #77c4b0;
+    background-color: #ffff;
+    display: inline-block;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+
+.toggle {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    left: 15px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #77c4b0;
+
+}
+
+.toggle .common {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #ffff;
+    border-radius: 50px;
+    transform: translate(-50%,-50%)
+}
+
+.toggle .top_line{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.toggle .middle_line {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.toggle .bottom_line {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.login-image {
+    width: 50%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+
+
+.register-image {
+    width: 50%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+
+.Login_text {
+    position:absolute;
+    top:100px;
+}
+
+.Register_text {
+    position:absolute;
+    top:120px;
+}
+
+.internal_page {
+    position: absolute;
+    left: 25%;
+    top: 150px;
+}
+
+.quiz{
+    position: absolute;
+    bottom: 100px;
+}
+
+.quiz ul{
+    position: absolute;
+    width: 1000px;
+    margin: 100px auto 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.quiz ul li{
+    display: flex;
+    background: #77c4b0;
+    padding: 10px 20px;
+    color: #fff;
+    margin: 35px 0;
+    transition: 0.5s;
+}
+
+.quiz ul li span:nth-child(1){
+    width: 900px ;
+}
+
+.quiz ul li span:nth-child(2){
+    background: #B0DDD1;
+    padding: 5px 20px;
+}
+
+.quiz ul li span:nth-child(2):hover{
+    transform: scale(1.1);
+    background: #a1d6c8;
+}
+
+.chatbox{
+    margin: 80px;
+    width: 260px;
+    border: 10px solid #77c4b0;
+    box-shadow: 2px 2px 5px #77c4b0;
+}
+
+.chat_header{
+    background-color: #77c4b0;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 18px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.chat_window{
+    height: 100%;
+    overflow: scroll;
+}
+
+.message_list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat_input{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #77c4b0;
+}
+
+.message_input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.send_button{
+    border: none;
+    outline: none;
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.send_button:hover{
+    background-color: rgb(255,255,255);
+    color: rgb(0,0,0);
+    box-shadow: 0 4px 18px 0 rgba(0,0,0, 0.25);
+}
+    
+    
+    
+    
