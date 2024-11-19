@@ -88,27 +88,7 @@ body {
     left: 0;
 }
 
-
-
 .content {
-    /*position: relative;
-    margin-top: 148px;
-    left: 0;
-    width: 100%;
-    height: auto;
-    padding: 5px 10px;
-    background: #77c4b0;
-    color: #000;*/
-
-    /*position: fixed;
-    margin-top: 145px;
-    left: 0;
-    width: 100%;
-    height: auto;
-    padding: 5px 10px;
-    background: #77c4b0;
-    color: #000;*/
-
     background-color: #77c4b0;
     padding: 20px 20px;
     margin-top: 145px;
@@ -132,13 +112,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    /*position: absolute;
-    left: 0;
-    height:250px;
-    width: 100%;
-    padding: 50px;
-    background: #C2E5DC;
-    color: #77c4b0;*/
+    margin-top: 50px;
 }
 
 .home_section2_bar h5{
@@ -146,57 +120,56 @@ body {
     color: #fff;
 }
 
+.homebox_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 270px;
+}
+
 .homebox {
+    width: 80%;
     display: flex;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
-    max-width: 900px;
-    width: 100%;
 }
 
-.homebox_text{
-
+.homebox_text {
     flex: 1;
-    padding: 20px;
+    padding: 110px 50px;
+    text-align: right;
 }
 
-.homebox_text h2{ 
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.homebox_text p {
-    line-height: 1.6;
+.homebox_text h4 {
+    margin-top: 20px;
+    color: #77c4b0;
+    margin: 0;
 }
 
 .homebox_image {
-    width: 50vh;
-    height: auto;
-    border-radius: 0 8px 8px 0;
+    flex: 1;
 }
 
-
+.homebox_image img{
+    width: 35vh;
+    height: auto;
+    object-fit: cover;
+}
 
 .home_section3 {
-    text-align: center;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.home_section4 {
+    text-align: right;
+    margin-top: 50px;
 }
 
 .home_illustration {
     float: right;
     width: 30%;
-}
-
-/*.home_section {
-    position: absolute;
-    width: 75%;
-    left: 15%;
-    top: 20%;
-    background-color: #77c4b0;
-    padding: 30px;
-    
-    /*margin-bottom: 20px;*/
 }
 
 h2 {
@@ -408,15 +381,6 @@ h2 {
     margin: 0;
     padding: 0;
 }
-
-/*.chat{
-    position: absolute;
-    right: 5px;
-    bottom: 0;
-    background-color: grey;
-    color: white;
-    padding: 5px;
-}*/
 
 .chat_input{
     display: flex;
