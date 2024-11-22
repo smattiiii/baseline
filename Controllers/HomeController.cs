@@ -24,9 +24,18 @@ namespace OS_GJ_Tutoring.Controllers
         }
 
         /*Added new razor view pages*/
+        
+
         public IActionResult Dashboard()
         {
-            return View();
+            /*Data*/
+            var chartData = new
+            {
+                Labels = new[] { "Courses Completed", "Resources Completed", "Sessions Completed", "Quizzes Completed" },
+                Values = new[] { 20, 15, 30, 10 }
+            };
+
+            return View(chartData);
         }
 
         public IActionResult Courses()
@@ -53,6 +62,7 @@ namespace OS_GJ_Tutoring.Controllers
         {
             return View();
         }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
