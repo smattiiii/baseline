@@ -17,6 +17,7 @@ html {
   min-height: 100%;
 }
 
+/*new font*/
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
@@ -24,6 +25,7 @@ body {
     background-color: #e6f2f1;
 }
 
+/*personalised nav bar*/
 .navbar{
   background-color: #77c4b0 ;
 }
@@ -36,6 +38,7 @@ body {
   color: #ffffff;
 }
 
+/*Change brand name to add brand identity*/
 .highlight {
   color: #8a77c4;
 }
@@ -53,6 +56,7 @@ body {
     background-color: #77c4b0;
 }
 
+/*Additional nav bar to identify pages*/
 .home_bar {
     position: absolute;
     top: 50px;
@@ -101,6 +105,7 @@ body {
     margin-top: 200px;
 }
 
+/*thick bar across homepage*/
 .home_section2_bar {
     background-color: #C2E5DC;
     position: absolute;
@@ -120,6 +125,7 @@ body {
     color: #fff;
 }
 
+/*Box containing text and image*/
 .homebox_container{
     display: flex;
     justify-content: center;
@@ -180,6 +186,7 @@ h2 {
   color: #8a77c4;
 }
 
+/*side bar with different pages*/
 .bar {
     background-color: #77c4b0;
     margin: 0;
@@ -313,6 +320,7 @@ h2 {
     top:120px;
 }
 
+/*Position pages to fit within sidebar*/
 .internal_page {
     position: absolute;
     left: 25%;
@@ -324,6 +332,7 @@ h2 {
 }
 
 
+/*Quiz bars*/
 .quiz {
     position: absolute;
     bottom: 100px;
@@ -362,6 +371,7 @@ h2 {
     background: #a1d6c8;
 }
 
+/*chatbox for discussion forum*/
 .chatbox{
     margin: 0px;
     width: 100%;
@@ -426,6 +436,7 @@ h2 {
     justify-content: center;
 }
 
+/*discussion forum box header*/
 .dfbox {
     width: 900px;
     display: flex;
@@ -446,6 +457,7 @@ h2 {
     margin: 0;
 } 
 
+/*Align videos with page*/
 .video-grid {
     display: flex;
     flex-wrap: wrap;
