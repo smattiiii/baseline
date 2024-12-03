@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using OS_GJ_Tutoring.Models;
 using System.Diagnostics;
@@ -12,7 +13,7 @@ namespace OS_GJ_Tutoring.Controllers
         {
             _logger = logger;
         }
-
+        
         public IActionResult Index()
         {
             return View();
@@ -24,8 +25,8 @@ namespace OS_GJ_Tutoring.Controllers
         }
 
         /*Added new razor view pages*/
-        
 
+        [Authorize]
         public IActionResult Dashboard()
         {
             /*Data*/
