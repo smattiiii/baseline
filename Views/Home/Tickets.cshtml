@@ -2,7 +2,7 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-    ViewData["Title"] = "Dashboard";
+    ViewData["Title"] = "Tickets";
 
 }
 
@@ -10,7 +10,7 @@
 
 
 <div class="home_bar">
-    <h6>Dashboard</h6>
+    <h6>Tickets</h6>
 </div>
 
 <!--Side bar with list of pages-->
@@ -30,8 +30,7 @@
         <li><a href="/Home/Tickets">Tickets to Offer</a></li>
         <li><a href="/Home/Resources">Zoo Ticket</a></li>
         <li><a href="/SessionsDBs/Index">Educational Visit</a></li>
-        <li><a href="/CoursesDBs/Index">Hotel Stays</a></li>
-        <li><a href="/Home/Quizzes">Year Pass - Platinum</a></li>
+        <li><a href="/Home/Stay">Hotel Stays</a></li>
         <li><a href="/Home/Discussion_Forum">Year Pass - Gold</a></li>
         <li><a href="/CoursesDBs/Index">Year Pass - Silver</a></li>
         <li><a href="/CoursesDBs/Index">Clubcard Discounts</a></li>
@@ -45,50 +44,65 @@
 
 <div class="internal_page">
 
-    <h1>Dashboard</h1>
+    <h1>Here are the Tickets we have to Offer:</h1>
     <p>View your progress here:</p>
 
-    <div style="width: 600px; margin: 0 auto;">
-        <canvas id="myBarChart"></canvas>
+
+
+    <div class="video-grid">
+
+        <div class="video-item">
+            <a href="https://youtu.be/l1OkiI_29dg?list=PLp8BSCLLWBUBtATlFwiBu3x-g3lvemM38">
+                <img src="~/css/videoone.jpg" alt="Geography video" class="image1-image" />
+            </a>
+            <h3>Zoo Ticket</h3>
+            <a href="#">Transcription</a>
+        </div>
+
+        <div class="video-item">
+            <a href="https://youtu.be/RjAOPEIlZc8?list=PLcWPAWkNIoiBq95negTUX46GBsoaqaIut">
+                <img src="~/css/videotwo.jpg" alt="Marketing video" class="image2-image" />
+            </a>
+            <h3>Educational Visit</h3>
+            <a href="#">Transcription</a>
+        </div>
+
+        <div class="video-item">
+            <a href="/Home/Stay">
+                <img src="~/css/videothree.jpg" alt="Business video" class="image3-image" />
+            </a>
+            <h3>Hotel Stays</h3>
+            <a href="#">Transcription</a>
+        </div>
+
+        <div class="video-item">
+            <a href="https://youtu.be/8-JI5sO3db4?list=PLqxP5EuGxPnfpX3abzZuycesdqlF6VR5-">
+                <img src="~/css/videofour.jpg" alt="Mathematics video" class="image4-image" />
+            </a>
+            <h3>Year Pass - Gold</h3>
+            <a href="#">Transcription</a>
+        </div>
+
+        <div class="video-item">
+            <a href="https://youtu.be/XyWahsjzuek?list=PLkTU1KJaY6sTIaeNlXQ5Rssm0JzyiSkjC">
+                <img src="~/css/videofive.jpg" alt="Electronics video" class="image5-image" />
+            </a>
+            <h3>Year Pass - Silver</h3>
+            <a href="#">Transcription</a>
+        </div>
+
+        <div class="video-item">
+            <a href="https://youtu.be/0TGTSLn3dsc?list=PLGvD8d3gDHUVgyxA8evex35dWdWpl47k3">
+                <img src="~/css/videosix.jpg" alt="Physics video" class="image6-image" />
+            </a>
+            <h3>Clubcard Discounts</h3>
+            <a href="#">Transcription</a>
+        </div>
+
     </div>
 
-    <script>
-        // Retrieve data from model
-        const labels = @Html.Raw(Json.Serialize(Model.Labels));
-        const values = @Html.Raw(Json.Serialize(Model.Values));
 
-        //Bar chart.js set up
-        const ctx = document.getElementById('myBarChart').getContext('2d');
-        new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: labels,
-                datasets: [{
-                    label: 'Performance Metrics',
-                    data: values,
-                    backgroundColor: [
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(153, 102, 255, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(153, 102, 255, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-    </script>
+    
+    
 
 </div>
