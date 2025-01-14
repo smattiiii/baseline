@@ -26,8 +26,8 @@ namespace OS_GJ_Tutoring.Controllers
 
         /*Added new razor view pages*/
 
-        [Authorize]
-        public IActionResult Dashboard()
+        
+        public IActionResult Tickets()
         {
             /*Data*/
             var chartData = new
@@ -39,27 +39,27 @@ namespace OS_GJ_Tutoring.Controllers
             return View(chartData);
         }
 
-        public IActionResult Courses()
+        public IActionResult Plan()
         {
             return View();
         }
 
-        public IActionResult Discussion_Forum()
+        public IActionResult Explore()
         {
             return View();
         }
 
-        public IActionResult Quizzes()
+        public IActionResult Education()
         {
             return View();
         }
 
-        public IActionResult Resources()
+        public IActionResult Stay()
         {
             return View();
         }
 
-        public IActionResult Sessions()
+        public IActionResult Book()
         {
             return View();
         }
