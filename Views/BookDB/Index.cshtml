@@ -1,0 +1,101 @@
+﻿@model IEnumerable<OS_GJ_Tutoring.Models.BookDB>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SurName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Time)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TicketoneQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TickettwoQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TicketthreeQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TicketfourQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TicketfiveQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TicketsixQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TicketsevenQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TicketeightQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YearPass)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SurName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Time)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TicketoneQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TickettwoQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TicketthreeQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TicketfourQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TicketfiveQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TicketsixQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TicketsevenQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TicketeightQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YearPass)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

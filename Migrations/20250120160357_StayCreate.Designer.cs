@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OS_GJ_Tutoring.Data;
 
@@ -11,9 +12,11 @@ using OS_GJ_Tutoring.Data;
 namespace OS_GJ_Tutoring.Migrations
 {
     [DbContext(typeof(OS_GJ_TutoringContext))]
-    partial class OS_GJ_TutoringContextModelSnapshot : ModelSnapshot
+    [Migration("20250120160357_StayCreate")]
+    partial class StayCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

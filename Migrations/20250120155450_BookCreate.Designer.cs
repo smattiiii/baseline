@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OS_GJ_Tutoring.Data;
 
@@ -11,9 +12,11 @@ using OS_GJ_Tutoring.Data;
 namespace OS_GJ_Tutoring.Migrations
 {
     [DbContext(typeof(OS_GJ_TutoringContext))]
-    partial class OS_GJ_TutoringContextModelSnapshot : ModelSnapshot
+    [Migration("20250120155450_BookCreate")]
+    partial class BookCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -107,37 +110,6 @@ namespace OS_GJ_Tutoring.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("SessionsDB");
-                });
-
-            modelBuilder.Entity("OS_GJ_Tutoring.Models.StayDB", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("FirstName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LastName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("NumNight")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NumVisitors")
-                        .HasColumnType("int");
-
-                    b.Property<string>("RoomName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("StayDB");
                 });
 #pragma warning restore 612, 618
         }

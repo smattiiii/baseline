@@ -16,5 +16,7 @@ namespace OS_GJ_Tutoring.Data
 
         public DbSet<OS_GJ_Tutoring.Models.SessionsDB> SessionsDB { get; set; } = default!;
         public DbSet<OS_GJ_Tutoring.Models.CoursesDB> CoursesDB { get; set; } = default!;
+        public DbSet<OS_GJ_Tutoring.Models.BookDB> BookDB { get; set; } = default!;
+        public DbSet<OS_GJ_Tutoring.Models.StayDB> StayDB { get; set; } = default!;
     }
 }
