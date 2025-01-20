@@ -13,62 +13,62 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="FirstName" class="control-label"></label>
+                <label asp-for="FirstName" class="control-label">Enter First Name:</label>
                 <input asp-for="FirstName" class="form-control" />
                 <span asp-validation-for="FirstName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SurName" class="control-label"></label>
+                <label asp-for="SurName" class="control-label">Enter Last Name:</label>
                 <input asp-for="SurName" class="form-control" />
                 <span asp-validation-for="SurName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Time" class="control-label"></label>
+                <label asp-for="Time" class="control-label">Enter Date/Time of Visit:</label>
                 <input asp-for="Time" class="form-control" />
                 <span asp-validation-for="Time" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TicketoneQty" class="control-label"></label>
+                <label asp-for="TicketoneQty" class="control-label">Adult ( 16+ ) Qty:</label>
                 <input asp-for="TicketoneQty" class="form-control" />
                 <span asp-validation-for="TicketoneQty" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TickettwoQty" class="control-label"></label>
+                <label asp-for="TickettwoQty" class="control-label">Child ( 3 - 15 ) Qty:</label>
                 <input asp-for="TickettwoQty" class="form-control" />
                 <span asp-validation-for="TickettwoQty" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TicketthreeQty" class="control-label"></label>
+                <label asp-for="TicketthreeQty" class="control-label">Under 3 ( 0 - 2 ) Qty:</label>
                 <input asp-for="TicketthreeQty" class="form-control" />
                 <span asp-validation-for="TicketthreeQty" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TicketfourQty" class="control-label"></label>
+                <label asp-for="TicketfourQty" class="control-label">Student ( With ID ) Qty:</label>
                 <input asp-for="TicketfourQty" class="form-control" />
                 <span asp-validation-for="TicketfourQty" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TicketfiveQty" class="control-label"></label>
+                <label asp-for="TicketfiveQty" class="control-label">Disabled Adult ( Carer goes free ) Qty:</label>
                 <input asp-for="TicketfiveQty" class="form-control" />
                 <span asp-validation-for="TicketfiveQty" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TicketsixQty" class="control-label"></label>
+                <label asp-for="TicketsixQty" class="control-label">Disabled Child ( Carer goes free ) Qty:</label>
                 <input asp-for="TicketsixQty" class="form-control" />
                 <span asp-validation-for="TicketsixQty" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TicketsevenQty" class="control-label"></label>
+                <label asp-for="TicketsevenQty" class="control-label">Educational Visit ( Teacher ) Qty:</label>
                 <input asp-for="TicketsevenQty" class="form-control" />
                 <span asp-validation-for="TicketsevenQty" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TicketeightQty" class="control-label"></label>
+                <label asp-for="TicketeightQty" class="control-label">Educational Visit ( Student ) Qty:</label>
                 <input asp-for="TicketeightQty" class="form-control" />
                 <span asp-validation-for="TicketeightQty" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="YearPass" class="control-label"></label>
+                <label asp-for="YearPass" class="control-label">Year Pass Selection: </label>
                 @Html.DropDownListFor(Model => Model.YearPass,
                          new SelectList(ViewBag.YearPasses, "Pass Type"),
                          "Select Pass",

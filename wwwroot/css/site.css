@@ -45,7 +45,11 @@ body {
 
 .nav-item {
   text-decoration: underline;
-    color: #258cfb;
+    color: white;
+}
+
+.nav-link text-light{
+    color: white;
 }
 
 .home_container {

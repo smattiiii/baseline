@@ -13,32 +13,32 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="FirstName" class="control-label"></label>
+                <label asp-for="FirstName" class="control-label">Enter First Name:</label>
                 <input asp-for="FirstName" class="form-control" />
                 <span asp-validation-for="FirstName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="LastName" class="control-label"></label>
+                <label asp-for="LastName" class="control-label">Enter Last Name:</label>
                 <input asp-for="LastName" class="form-control" />
                 <span asp-validation-for="LastName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Date" class="control-label"></label>
+                <label asp-for="Date" class="control-label">Enter Date Upon Arrival:</label>
                 <input asp-for="Date" class="form-control" />
                 <span asp-validation-for="Date" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="NumNight" class="control-label"></label>
+                <label asp-for="NumNight" class="control-label">Enter Number of Nights Stay:</label>
                 <input asp-for="NumNight" class="form-control" />
                 <span asp-validation-for="NumNight" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="NumVisitors" class="control-label"></label>
+                <label asp-for="NumVisitors" class="control-label">Enter Number of Visitors:</label>
                 <input asp-for="NumVisitors" class="form-control" />
                 <span asp-validation-for="NumVisitors" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="RoomName" class="control-label"></label>
+                <label asp-for="RoomName" class="control-label">Select Lodge Type:</label>
                 @Html.DropDownListFor(Model => Model.RoomName,
                          new SelectList(ViewBag.RoomNames, "Room Name"),
                          "Select Room",
