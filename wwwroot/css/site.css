@@ -22,7 +22,7 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
     margin: 0;
     margin-bottom: 60px;
-    background-color: #e6f2f1;
+    background-color: #CACFC4;
 }
 
 /*
@@ -117,12 +117,18 @@ body {
 
 .home_section1 {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
+}
+
+.home_section1 h1 {
+    color: #c49e32;
+    font-size: 115px;
+
 }
 
 /*thick bar across homepage*/
 .home_section2_bar {
-    background-color: #C2E5DC;
+    background-color: #2a3f09;
     position: absolute;
     left: 0;
     width: 100%;
@@ -150,7 +156,7 @@ body {
 .homebox {
     width: 80%;
     display: flex;
-    background-color: #fff;
+    background-color: #D4B355;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
@@ -158,13 +164,13 @@ body {
 
 .homebox_text {
     flex: 1;
-    padding: 110px 50px;
-    text-align: right;
+    padding: 50px 50px;
+    text-align: center;
 }
 
 .homebox_text h4 {
-    margin-top: 20px;
-    color: #77c4b0;
+    margin-top: 10px;
+    color: #130629;
     margin: 0;
 }
 
@@ -173,24 +179,30 @@ body {
 }
 
 .homebox_image img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*
+    z-index: -1;*/
+}
+
+/*
+.homebox_image img{
     width: 35vh;
     height: auto;
     object-fit: cover;
-}
+}*/
 
 .home_section3 {
-    text-align: left;
+    text-align: center;
     margin-top: 50px;
 }
 
 .home_section4 {
-    text-align: right;
+    text-align: center;
     margin-top: 50px;
-}
-
-.home_illustration {
-    float: right;
-    width: 30%;
 }
 
 h2 {
@@ -201,9 +213,47 @@ h2 {
   color: #8a77c4;
 }
 
+
+.home_video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap:50px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.home_video-item {
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    max-width: 320px;
+    width: calc(50% - 20px);
+}
+
+.home_video-item h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.home_video-item a {
+    text-decoration: none;
+    color: #2a3f09;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.home_video-item a:hover {
+    color: #c49e32;
+}
+
+
 /*side bar with different pages*/
 .bar {
-    background-color: #77c4b0;
+    background-color: #2a3f09;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -245,7 +295,7 @@ h2 {
 }
 
 .bar ul li:hover a {
-    color: #77c4b0;
+    color: #c49e32;
     background-color: #ffff;
     display: inline-block;
     padding: 5px 10px;
@@ -262,8 +312,7 @@ h2 {
     z-index: 1;
     cursor: pointer;
     border-radius: 2px;
-    background-color: #77c4b0;
-
+    background-color: #2a3f09;
 }
 
 .toggle .common {
@@ -340,16 +389,17 @@ h2 {
     position: absolute;
     left: 25%;
     top: 150px;
+    text-align: center;
 }
 
 .internal_page h1 {
-    color: #8a77c4
+    color: #c49e32
 }
 
 /*Quiz bars*/
 .quiz {
     position: absolute;
-    bottom: 100px;
+    /*bottom: 100px;*/
 }
 
 .quiz ul{
@@ -505,12 +555,63 @@ h2 {
 
 .video-item a {
     text-decoration: none;
-    color: #77c4b0;
+    color: #2a3f09;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .video-item a:hover {
-    color: #8a77c4;
+    color: #c49e32;
+}
+    
+.explore_video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.explore_two_video-grid {
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.explore_video-item {
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    max-width: 500px;
+    width: calc(50% - 20px);
+}
+
+.explore_video-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.explore_video-item h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.explore_video-item a {
+    text-decoration: none;
+    color: #2a3f09;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.explore_video-item a:hover {
+    color: #c49e32;
 }
     
