@@ -343,6 +343,39 @@ h2 {
     transform: translate(-50%,-50%);
 }
 
+/* Full window background image */
+.login_body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*background-image: url(''); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire window */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Avoids tiling */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    height: 100vh; /* Full window height */
+    opacity: 0.8; /* Makes the background image semi-transparent */
+}
+
+/* Container for content */
+.login_content {
+    position: relative;
+    z-index: 1; /* Ensures this is above the background */
+    color: #fff; /* Text color for visibility */
+    padding: 20px;
+}
+
+/* Optional overlay for additional transparency control */
+.login_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 0; /* Sits below the content */
+}
+
 .login-image {
     width: 50%;
     height: auto;
@@ -612,5 +645,47 @@ h2 {
 }
 
 .edu_video-item a:hover {
+    color: #c49e32;
+}
+
+.book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15%;
+    padding: 100px 50px;
+    justify-items: center;
+}
+
+.book-item {
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    max-width: 500px;
+    width: calc(50% - 20px);
+}
+
+.book-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.book-item h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/*.book-item a {
+    text-decoration: none;
+    color: #2a3f09;
+    font-weight: bold;
+    transition: color 0.3s;
+}*/
+
+.book-item a:hover {
     color: #c49e32;
 }
