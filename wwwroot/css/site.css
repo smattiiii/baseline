@@ -364,9 +364,9 @@ h2 {
 .login_image {
     position: absolute;
     top: 80px;
-    width: 200vh;
+    width: auto;
     left: -220px;
-    height: auto;
+    height: 90vh;
     margin: 0;
     padding: 0;
     display: block;
@@ -396,9 +396,9 @@ h2 {
 .register_image {
     position: absolute;
     top: 80px;
-    width: 200vh;
+    width: auto;
     left: -220px;
-    height: auto;
+    height: 100vh;
     margin: 0;
     padding: 0;
     display: block;
@@ -441,6 +441,7 @@ h2 {
 /*Quiz bars*/
 .quiz {
     position: absolute;
+    width: 50%;
     /*bottom: 100px;*/
 }
 
@@ -482,7 +483,9 @@ h2 {
 
 /*discussion forum box header*/
 .dfbox {
-    width: 900px;
+    position: relative;
+    top: 140px;
+    width: 200%;
     display: flex;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -505,7 +508,18 @@ h2 {
     color: #8a77c4;
     margin: 0;
     text-align: right;
-} 
+}
+
+.plan_image {
+    position: absolute;
+    left: 8%;
+    width: 100%;
+    height: auto;
+    max-height: 30%; 
+    object-fit: cover;
+    top: 70px;
+    z-index: -1;
+}
 
 /*Align videos with page*/
 .video-grid {
@@ -551,6 +565,7 @@ h2 {
 }
     
 .explore_video-grid {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -559,7 +574,7 @@ h2 {
 }
 
 .explore_two_video-grid {
-    margin-top: 200px;
+    margin-top: 600px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -568,13 +583,15 @@ h2 {
 }
 
 .explore_video-item {
+    position: relative;
+    right: 0;
     text-align: center;
     background-color: #fff;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    max-width: 500px;
+    max-width: 50%;
     width: calc(50% - 20px);
 }
 
@@ -601,6 +618,53 @@ h2 {
     color: #c49e32;
 }
     
+.plan_grid {
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+
+.plan_item {
+    position: relative;
+    right: 0;
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+
+    width: calc(50% - 20px);
+}
+
+.plan_item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.plan_item h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.plan_item a {
+    text-decoration: none;
+    color: #2a3f09;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.plan_item a:hover {
+    color: #c49e32;
+}
+
 
 .edu_video-grid {
     display: flex;
@@ -636,6 +700,20 @@ h2 {
 
 .edu_video-item a:hover {
     color: #c49e32;
+}
+
+.lodge_top {
+    position: absolute;
+    left: 8%;
+    /*width: auto;
+    max-height: 50%;*/
+    width: 100%;
+    height: auto;
+    min-height: 20%;
+    object-fit: cover;
+    
+    top: -70px;
+    z-index: -1;
 }
 
 .book_text {
