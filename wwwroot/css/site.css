@@ -362,9 +362,10 @@ h2 {
 }
 
 .login_image {
-    position: relative;
+    position: absolute;
     top: 80px;
-    width: 150vh;
+    width: 200vh;
+    left: -220px;
     height: auto;
     margin: 0;
     padding: 0;
@@ -393,9 +394,10 @@ h2 {
 }
 
 .register_image {
-    position: relative;
+    position: absolute;
     top: 80px;
-    width: 150vh;
+    width: 200vh;
+    left: -220px;
     height: auto;
     margin: 0;
     padding: 0;
