@@ -14,10 +14,10 @@
     <div class="row">
         <div class="col-md-4">
             
-            <img src="css/Home_image.jpg" alt="register image" class="register_image">
+            <img src="~/css/register_image.jpg" alt="monkey image" class="register_image">
 
             <!--new class-->
-            <div class="Register_text">
+            <div class="register_text">
                 <h1>@ViewData["Title"]</h1>
 
                 <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
@@ -41,22 +41,21 @@
                     </div>
 
                     <!--Added styling to button-->
-                    <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary" style="background-color: #8a77c4">Register</button>
+                    <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary" style="background-color: #2a3f09 ; color: #c49e32">Register</button>
                 </form>
             </div>
 
 
         </div>
-        <div class="col-md-6 col-md-offset-2">
-            
-        </div>
+        
     </div>
     
 </div>
 
 
 
-
+<div class="col-md-6 col-md-offset-2">
+</div>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

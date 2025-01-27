@@ -366,11 +366,11 @@ h2 {
     top: 80px;
     width: 150vh;
     height: auto;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     display: block;
     right: 0;
-    z-index: 1;
+    z-index: 0;
     opacity: 0.6;
 }
 
@@ -397,11 +397,11 @@ h2 {
     top: 80px;
     width: 150vh;
     height: auto;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     display: block;
     right: 0;
-    z-index: 1;
+    z-index: 0;
     opacity: 0.6;
 }
 
@@ -636,12 +636,20 @@ h2 {
     color: #c49e32;
 }
 
+.book_text {
+    text-align: center;
+    color: #2a3f09;
+    padding: 50px;
+
+}
+
 .book-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 15%;
+    gap: 40px;
     padding: 100px 50px;
     justify-items: center;
+    top: 40px;
 }
 
 .book-item {
@@ -663,16 +671,17 @@ h2 {
 
 .book-item h3 {
     margin: 10px 0;
-    font-size: 18px;
+    font-size: 50px;
     color: #333;
 }
 
-/*.book-item a {
+.book-item a {
     text-decoration: none;
+    font-size: 35px;
     color: #2a3f09;
     font-weight: bold;
     transition: color 0.3s;
-}*/
+}
 
 .book-item a:hover {
     color: #c49e32;
