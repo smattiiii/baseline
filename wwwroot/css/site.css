@@ -343,78 +343,66 @@ h2 {
     transform: translate(-50%,-50%);
 }
 
-/* Full window background image */
-.login_body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /*background-image: url(''); /* Replace with your image URL */
-    background-size: cover; /* Ensures the image covers the entire window */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Avoids tiling */
-    background-attachment: fixed; /* Keeps the image fixed while scrolling */
-    height: 100vh; /* Full window height */
-    opacity: 0.8; /* Makes the background image semi-transparent */
-}
-
 /* Container for content */
 .login_content {
     position: relative;
-    z-index: 1; /* Ensures this is above the background */
-    color: #fff; /* Text color for visibility */
-    padding: 20px;
+    left: 10%;
+    top: -73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    height: 100vh;
 }
 
-/* Optional overlay for additional transparency control */
-.login_overlay {
+.login_text {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-    z-index: 0; /* Sits below the content */
+    top: 150px;
+    left: 10px;
 }
 
-.login-image {
-    width: 50%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
-    display: block;
-    position: absolute;
-    right: 0;
+.login_image {
+    position: relative;
     top: 80px;
-}
-
-
-.register-image {
-    width: 50%;
+    width: 150vh;
     height: auto;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
     display: block;
-    position: absolute;
     right: 0;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+/* Container for content */
+.register_content {
+    position: relative;
+    left: 10%;
+    top: -73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    height: 100vh;
+}
+
+.register_text {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+}
+
+.register_image {
+    position: relative;
     top: 80px;
-}
-
-.Login_text {
-    position:absolute;
-    top:100px;
-}
-
-.Register_text {
-    position:absolute;
-    top:120px;
+    width: 150vh;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    right: 0;
+    z-index: 1;
+    opacity: 0.6;
 }
 
 /*Position pages to fit within sidebar*/
