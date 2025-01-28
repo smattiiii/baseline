@@ -4,58 +4,70 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<div class="ticket_content">
 
-<h4>StayDB</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="FirstName" class="control-label">Enter First Name:</label>
-                <input asp-for="FirstName" class="form-control" />
-                <span asp-validation-for="FirstName" class="text-danger"></span>
+    <img src="~/css/stay_image.jpg" alt="flamingo" class="ticket_image">
+
+    <div class="ticket_text">
+
+        <h1>RZA Lodge Booking</h1>
+
+        <h4>Select your ticket type and quantity below:</h4>
+
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="FirstName" class="control-label">Enter First Name:</label>
+                        <input asp-for="FirstName" class="form-control" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="LastName" class="control-label">Enter Last Name:</label>
+                        <input asp-for="LastName" class="form-control" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Date" class="control-label">Enter Date Upon Arrival:</label>
+                        <input asp-for="Date" class="form-control" />
+                        <span asp-validation-for="Date" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="NumNight" class="control-label">Enter Number of Nights Stay:</label>
+                        <input asp-for="NumNight" class="form-control" />
+                        <span asp-validation-for="NumNight" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="NumVisitors" class="control-label">Enter Number of Visitors:</label>
+                        <input asp-for="NumVisitors" class="form-control" />
+                        <span asp-validation-for="NumVisitors" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="RoomName" class="control-label">Select Lodge Type:</label>
+                        @Html.DropDownListFor(Model => Model.RoomName,
+                                 new SelectList(ViewBag.RoomNames, "Room Name"),
+                                 "Select Room",
+                                 new { @class = "form-control" })
+                        <span asp-validation-for="RoomName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" style="background-color: #2a3f09 ; color: #c49e32" />
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <label asp-for="LastName" class="control-label">Enter Last Name:</label>
-                <input asp-for="LastName" class="form-control" />
-                <span asp-validation-for="LastName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Date" class="control-label">Enter Date Upon Arrival:</label>
-                <input asp-for="Date" class="form-control" />
-                <span asp-validation-for="Date" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NumNight" class="control-label">Enter Number of Nights Stay:</label>
-                <input asp-for="NumNight" class="form-control" />
-                <span asp-validation-for="NumNight" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NumVisitors" class="control-label">Enter Number of Visitors:</label>
-                <input asp-for="NumVisitors" class="form-control" />
-                <span asp-validation-for="NumVisitors" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="RoomName" class="control-label">Select Lodge Type:</label>
-                @Html.DropDownListFor(Model => Model.RoomName,
-                         new SelectList(ViewBag.RoomNames, "Room Name"),
-                         "Select Room",
-                         new { @class = "form-control" })
-                <span asp-validation-for="RoomName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
+
+        <div>
+            <a asp-action="Index" style="color: #c49e32">Back to List</a>
+        </div>
+
+        @section Scripts {
+            @{
+                await Html.RenderPartialAsync("_ValidationScriptsPartial");
+            }
+        }
+
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

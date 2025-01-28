@@ -4,62 +4,74 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="ticket_content">
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Name:
-            </th>
-            <th>
-                
-            </th>
-            <th>
-                Arrival Date:
-            </th>
-            <th>
-                Night(s) Num:
-            </th>
-            <th>
-                Visitor(s) Num:
-            </th>
-            <th>
-                Lodge:
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NumNight)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NumVisitors)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RoomName)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <img src="~/css/stay_image.jpg" alt="flamingo" class="ticket_image">
+
+    <div class="ticket_text">
+
+        <h1>Edit RZA Lodge Booking</h1>
+
+        <p>
+            <a asp-action="Create" style="color: #c49e32">New RZA Lodge Booking</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Name:
+                    </th>
+                    <th>
+
+                    </th>
+                    <th>
+                        Arrival Date:
+                    </th>
+                    <th>
+                        Night(s) Num:
+                    </th>
+                    <th>
+                        Visitor(s) Num:
+                    </th>
+                    <th>
+                        Lodge:
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FirstName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LastName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Date)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NumNight)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NumVisitors)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.RoomName)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id" style="color: #c49e32">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id" style="color: #c49e32">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id" style="color: #c49e32">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </<div>
+
+</div>
+
+

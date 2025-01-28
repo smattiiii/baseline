@@ -4,51 +4,60 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<div class="ticket_content">
 
-<div>
-    <h4>StayDB</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            Name of Booking:
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FirstName)
-        </dd>
-        <dt class = "col-sm-2">
-            
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.LastName)
-        </dd>
-        <dt class = "col-sm-2">
-            Date of Arrival:
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Date)
-        </dd>
-        <dt class = "col-sm-2">
-            Number of Nights:
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NumNight)
-        </dd>
-        <dt class = "col-sm-2">
-            Number of Visitors:
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NumVisitors)
-        </dd>
-        <dt class = "col-sm-2">
-            Lodge:
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.RoomName)
-        </dd>
-    </dl>
+    <img src="~/css/stay_image.jpg" alt="flamingo" class="ticket_image">
+
+    <div class="ticket_text">
+
+        <h1>RZA Lodge Booking Details</h1>
+
+        <div>
+            <h4>StayDB</h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-2">
+                    Name of Booking:
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.FirstName)
+                </dd>
+                <dt class="col-sm-2">
+
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.LastName)
+                </dd>
+                <dt class="col-sm-2">
+                    Date of Arrival:
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Date)
+                </dd>
+                <dt class="col-sm-2">
+                    Number of Nights:
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.NumNight)
+                </dd>
+                <dt class="col-sm-2">
+                    Number of Visitors:
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.NumVisitors)
+                </dd>
+                <dt class="col-sm-2">
+                    Lodge:
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.RoomName)
+                </dd>
+            </dl>
+        </div>
+        <div>
+            <a asp-action="Edit" asp-route-id="@Model?.Id" style="color: #c49e32">Edit</a> |
+            <a asp-action="Index" style="color: #c49e32">Back to List</a>
+        </div>
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+

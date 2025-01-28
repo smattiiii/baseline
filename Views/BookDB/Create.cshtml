@@ -4,89 +4,103 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<div class="ticket_content">
 
-<h4>BookDB</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="FirstName" class="control-label">Enter First Name:</label>
-                <input asp-for="FirstName" class="form-control" />
-                <span asp-validation-for="FirstName" class="text-danger"></span>
+    <img src="~/css/login_image.jpg" alt="flamingo" class="ticket_image">
+
+    <div class="ticket_text">
+
+        <h1>RZA Ticket Booking</h1>
+
+        <h4>Select your ticket type and quantity below:</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="FirstName" class="control-label">Enter First Name:</label>
+                        <input asp-for="FirstName" class="form-control" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="SurName" class="control-label">Enter Last Name:</label>
+                        <input asp-for="SurName" class="form-control" />
+                        <span asp-validation-for="SurName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Time" class="control-label">Enter Date/Time of Visit:</label>
+                        <input asp-for="Time" class="form-control" />
+                        <span asp-validation-for="Time" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TicketoneQty" class="control-label">Adult ( 16+ ) Qty:</label>
+                        <input asp-for="TicketoneQty" class="form-control" />
+                        <span asp-validation-for="TicketoneQty" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TickettwoQty" class="control-label">Child ( 3 - 15 ) Qty:</label>
+                        <input asp-for="TickettwoQty" class="form-control" />
+                        <span asp-validation-for="TickettwoQty" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TicketthreeQty" class="control-label">Under 3 ( 0 - 2 ) Qty:</label>
+                        <input asp-for="TicketthreeQty" class="form-control" />
+                        <span asp-validation-for="TicketthreeQty" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TicketfourQty" class="control-label">Student ( With ID ) Qty:</label>
+                        <input asp-for="TicketfourQty" class="form-control" />
+                        <span asp-validation-for="TicketfourQty" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TicketfiveQty" class="control-label">Disabled Adult ( Carer goes free ) Qty:</label>
+                        <input asp-for="TicketfiveQty" class="form-control" />
+                        <span asp-validation-for="TicketfiveQty" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TicketsixQty" class="control-label">Disabled Child ( Carer goes free ) Qty:</label>
+                        <input asp-for="TicketsixQty" class="form-control" />
+                        <span asp-validation-for="TicketsixQty" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TicketsevenQty" class="control-label">Educational Visit ( Teacher ) Qty:</label>
+                        <input asp-for="TicketsevenQty" class="form-control" />
+                        <span asp-validation-for="TicketsevenQty" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TicketeightQty" class="control-label">Educational Visit ( Student ) Qty:</label>
+                        <input asp-for="TicketeightQty" class="form-control" />
+                        <span asp-validation-for="TicketeightQty" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="YearPass" class="control-label">Year Pass Selection: </label>
+                        @Html.DropDownListFor(Model => Model.YearPass,
+                                 new SelectList(ViewBag.YearPasses, "Pass Type"),
+                                 "Select Pass",
+                                 new { @class = "form-control" })
+
+                        <span asp-validation-for="YearPass" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" style="background-color: #2a3f09 ; color: #c49e32" />
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <label asp-for="SurName" class="control-label">Enter Last Name:</label>
-                <input asp-for="SurName" class="form-control" />
-                <span asp-validation-for="SurName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Time" class="control-label">Enter Date/Time of Visit:</label>
-                <input asp-for="Time" class="form-control" />
-                <span asp-validation-for="Time" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TicketoneQty" class="control-label">Adult ( 16+ ) Qty:</label>
-                <input asp-for="TicketoneQty" class="form-control" />
-                <span asp-validation-for="TicketoneQty" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TickettwoQty" class="control-label">Child ( 3 - 15 ) Qty:</label>
-                <input asp-for="TickettwoQty" class="form-control" />
-                <span asp-validation-for="TickettwoQty" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TicketthreeQty" class="control-label">Under 3 ( 0 - 2 ) Qty:</label>
-                <input asp-for="TicketthreeQty" class="form-control" />
-                <span asp-validation-for="TicketthreeQty" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TicketfourQty" class="control-label">Student ( With ID ) Qty:</label>
-                <input asp-for="TicketfourQty" class="form-control" />
-                <span asp-validation-for="TicketfourQty" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TicketfiveQty" class="control-label">Disabled Adult ( Carer goes free ) Qty:</label>
-                <input asp-for="TicketfiveQty" class="form-control" />
-                <span asp-validation-for="TicketfiveQty" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TicketsixQty" class="control-label">Disabled Child ( Carer goes free ) Qty:</label>
-                <input asp-for="TicketsixQty" class="form-control" />
-                <span asp-validation-for="TicketsixQty" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TicketsevenQty" class="control-label">Educational Visit ( Teacher ) Qty:</label>
-                <input asp-for="TicketsevenQty" class="form-control" />
-                <span asp-validation-for="TicketsevenQty" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TicketeightQty" class="control-label">Educational Visit ( Student ) Qty:</label>
-                <input asp-for="TicketeightQty" class="form-control" />
-                <span asp-validation-for="TicketeightQty" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="YearPass" class="control-label">Year Pass Selection: </label>
-                @Html.DropDownListFor(Model => Model.YearPass,
-                         new SelectList(ViewBag.YearPasses, "Pass Type"),
-                         "Select Pass",
-                         new { @class = "form-control" })
-                
-                <span asp-validation-for="YearPass" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
+
+        <div>
+            <a asp-action="Index" style="color: #2a3f09;">Back to List</a>
+        </div>
+
+        @section Scripts {
+            @{
+                await Html.RenderPartialAsync("_ValidationScriptsPartial");
+            }
+        }
+
+
     </div>
+
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

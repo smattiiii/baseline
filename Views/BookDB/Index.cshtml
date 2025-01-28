@@ -4,99 +4,111 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="ticket_content">
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            
-            <th>
-                Name:
-            </th>
-            <th>
-                
-            </th>
-            <th>
-                Date:
-            </th>
-            <th>
-                Adult Qty:
-            </th>
-            <th>
-                Child Qty:
-            </th>
-            <th>
-                Under 3 Qty:
-            </th>
-            <th>
-                Student Qty:
-            </th>
-            <th>
-                Disabled A Qty:
-            </th>
-            <th>
-                Disabled C Qty:
-            </th>
-            <th>
-                Teacher Qty:
-            </th>
-            <th>
-                Students Qty:
-            </th>
-            <th>
-                Year Pass Type:
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SurName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Time)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TicketoneQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TickettwoQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TicketthreeQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TicketfourQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TicketfiveQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TicketsixQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TicketsevenQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TicketeightQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.YearPass)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <img src="~/css/login_image.jpg" alt="flamingo" class="ticket_image">
+
+    <div class="ticket_text">
+
+        <h1>RZA Upcoming Bookings</h1>
+
+        <p>
+            <a asp-action="Create" style="color: #2a3f09;">Add Booking</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+
+                    <th>
+                        Name:
+                    </th>
+                    <th>
+
+                    </th>
+                    <th>
+                        Date:
+                    </th>
+                    <th>
+                        Adult Qty:
+                    </th>
+                    <th>
+                        Child Qty:
+                    </th>
+                    <th>
+                        Under 3 Qty:
+                    </th>
+                    <th>
+                        Student Qty:
+                    </th>
+                    <th>
+                        Disabled A Qty:
+                    </th>
+                    <th>
+                        Disabled C Qty:
+                    </th>
+                    <th>
+                        Teacher Qty:
+                    </th>
+                    <th>
+                        Students Qty:
+                    </th>
+                    <th>
+                        Year Pass Type:
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FirstName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SurName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Time)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TicketoneQty)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TickettwoQty)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TicketthreeQty)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TicketfourQty)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TicketfiveQty)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TicketsixQty)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TicketsevenQty)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TicketeightQty)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.YearPass)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id" style="color: #2a3f09 ;">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id" style="color: #2a3f09;">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id" style="color: #2a3f09;">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+

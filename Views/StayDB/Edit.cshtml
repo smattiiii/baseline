@@ -4,56 +4,69 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
 
-<h4>StayDB</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="FirstName" class="control-label">First Name:</label>
-                <input asp-for="FirstName" class="form-control" />
-                <span asp-validation-for="FirstName" class="text-danger"></span>
+<div class="ticket_content">
+
+    <img src="~/css/stay_image.jpg" alt="flamingo" class="ticket_image">
+
+    <div class="ticket_text">
+
+        <h1>Edit RZA Lodge Booking</h1>
+
+        <h4>StayDB</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Id" />
+                    <div class="form-group">
+                        <label asp-for="FirstName" class="control-label">First Name:</label>
+                        <input asp-for="FirstName" class="form-control" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="LastName" class="control-label">Last Name:</label>
+                        <input asp-for="LastName" class="form-control" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Date" class="control-label">Date of Arrival:</label>
+                        <input asp-for="Date" class="form-control" />
+                        <span asp-validation-for="Date" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="NumNight" class="control-label">Number of Nights:</label>
+                        <input asp-for="NumNight" class="form-control" />
+                        <span asp-validation-for="NumNight" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="NumVisitors" class="control-label">Number of Visitors:</label>
+                        <input asp-for="NumVisitors" class="form-control" />
+                        <span asp-validation-for="NumVisitors" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="RoomName" class="control-label">Lodge:</label>
+                        <input asp-for="RoomName" class="form-control" />
+                        <span asp-validation-for="RoomName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" style="background-color: #2a3f09 ; color: #c49e32" />
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <label asp-for="LastName" class="control-label">Last Name:</label>
-                <input asp-for="LastName" class="form-control" />
-                <span asp-validation-for="LastName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Date" class="control-label">Date of Arrival:</label>
-                <input asp-for="Date" class="form-control" />
-                <span asp-validation-for="Date" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NumNight" class="control-label">Number of Nights:</label>
-                <input asp-for="NumNight" class="form-control" />
-                <span asp-validation-for="NumNight" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NumVisitors" class="control-label">Number of Visitors:</label>
-                <input asp-for="NumVisitors" class="form-control" />
-                <span asp-validation-for="NumVisitors" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="RoomName" class="control-label">Lodge:</label>
-                <input asp-for="RoomName" class="form-control" />
-                <span asp-validation-for="RoomName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
+
+        <div>
+            <a asp-action="Index" style="color: #c49e32">Back to List</a>
+        </div>
+
+        @section Scripts {
+            @{
+                await Html.RenderPartialAsync("_ValidationScriptsPartial");
+            }
+        }
+
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

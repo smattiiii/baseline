@@ -27,8 +27,9 @@
         <li><a href="/Home/Explore">Explore</a></li>
         <li><a href="/Home/Explore">Our Safari</a></li>
         <li><a href="/Home/Explore">Services</a></li>
+        <li><a href="/Home/Explore">Map</a></li>
+        <li><a href="/Home/Explore">Opening Times</a></li>
         <li><a href="/Home/Explore">Animal Profiles</a></li>
-        <li><a href="/Home/Explore">Gallery</a></li>
 
 
 
@@ -37,12 +38,18 @@
 
 </nav>
 
+<img src="~/css/plan_image.jpg" alt="lion with cub" class="plan_image" />
+
 <div class="internal_page">
 
-    <h1>EXPLORE WHAT'S HERE</h1>
-    <H6>WE PRIDE OURSELVES IN PROVIDING THE VERY BEST ANIMAL ADVENTURE EXPERIENCE FOR ALL AGES</H6>
-    <p>We boast having over 10,000 animals here at RZA, Pass through the zoo and spot some of your most favourite animals,<br /> if not ride in style through our terains. Which is more your style? </p>    
 
+    <div class="font_border">
+        <h1>EXPLORE WHAT'S HERE</h1>
+        <H6>WE PRIDE OURSELVES IN PROVIDING THE VERY BEST ANIMAL ADVENTURE EXPERIENCE FOR ALL AGES</H6>
+        <p>We boast having over 10,000 animals here at RZA, Pass through the zoo and spot some of your most favourite animals,<br /> if not ride in style through our terains. Which is more your style? </p>
+    </div>
+
+        
     <div class="explore_video-grid">
 
         <div class="explore_video-item">
@@ -64,12 +71,14 @@
     </div> 
 
     <div class="services">
-        
-        <h1>Services</h1>
-        <h6>Our Animals are not the only things we pride ourselves on: </h6>
 
 
-        <div class="quiz">
+        <div class="service_head">
+            <h1>Services</h1>
+            <h6>Our Animals are not the only things we pride ourselves on: </h6>
+        </div>
+
+        <div class="service_list">
 
 
             <ul>
@@ -110,29 +119,54 @@
 
         </div>
 
-        <p>Unleash your wild side in one of our many play areas designed based on some of our animals stunning habitats, talking of habitats, we have plenty of gardens filled with exotic floras inspired by them. Quench your thirst with an espresso at our cafe, almost as essential as a waterhole in the Savanah, or brouse our stunning selection of memorabilia in the gift shop. If you wish to further your knowledge on the world around you make sure to listen in to our daily talks, or brouse our conservation hub and discover how we are making a real difference.  </p>
+        <div class="service_tail">
+            <p>Unleash your wild side in one of our many play areas designed based on some of our animals stunning habitats, talking of habitats, we have plenty of gardens filled with exotic floras inspired by them. Quench your thirst with an espresso at our cafe, almost as essential as a waterhole in the Savanah, or brouse our stunning selection of memorabilia in the gift shop. If you wish to further your knowledge on the world around you make sure to listen in to our daily talks, or brouse our conservation hub and discover how we are making a real difference.  </p>
+        
 
-        <div class="Book_button">
+            <div class="Book_button">
 
-            <a href="/BookDB/Create/">BOOK NOW!</a>
+                <a href="/BookDB/Create/">BOOK NOW!</a>
+            </div>
+
+            <div class="explore_video-grid">
+
+                <div class="explore_video-item">
+                    <a>
+                        <img src="~/css/explore_map.jpg" alt="Flamingo Feeding Session" class="image1-image" />
+                    </a>
+                    <h3>Download Our Map</h3>
+                </div>
+
+                <div class="explore_video-item">
+                    <h2>Opening Times:</h2>
+                    <h5>
+                        Sunday - Thursday:<br />   Opening - 10am | Closing - 4pm<br /><br />
+                        Friday - Saturday:<br />   Opening - 10am | Closing - 5pm<br /><br />
+                        Peak times: April - September<br /><br />
+                        Regular times: October - March
+                    </h5>
+                    <a href="#"></a>
+                </div>
+
+            </div>
+
+            <h1>Animal Profiles</h1>
+            <p>Explore exciting facts about some of our most beloved animals. Click on the image for additional information.</p>
+
         </div>
 
     </div>
-
-
-    <h1>Animal Profiles</h1>
-    <p>Explore exciting facts about some of our most beloved animals. Click on the image for additional information.</p>
 
     <div class="explore_two_video-grid">
 
         
 
         <div class="explore_video-item">
-            <a href="https://www.britannica.com/animal/penguin">
-                <img src="~/css/profile_one.jpg" alt="Penguin" class="image3-image" />
+            <a href="https://www.britannica.com/animal/giraffe">
+                <img src="~/css/profile_five.jpg" alt="Giraffe poking tongue out" class="image6-image" />
             </a>
-            <h3>Penguin</h3>
-            <a href="#">Flightless stocky, short-legged marine birds, found in the Southern Hemisphere are beloved by humans for their adorable appearance. Throughout years immesnse colonies have formed creating large otetials for nesting and feeding. Their contrasting feathers range from white to black across their back and bellow, their colour is rare and limited. Their form is adapt to their flightless aquatic existence used to paddle and swaddle across their habbitat.</a>
+            <h3>Giraffe</h3>
+            <a href="#">Standing at around 5 meters tall, emphasised by their long necks that prance across the open woodlands of East Africa. As displayed in the image above they utilise their tough tongues, which are almost half a meter long, to eat new shooys located almost six meters from the ground. Their unique patwork of brown allows them to blend into the dappled shadows of the Savanna.</a>
         </div>
 
         <div class="explore_video-item">
@@ -152,11 +186,11 @@
         </div>
 
         <div class="explore_video-item">
-            <a href="https://www.britannica.com/animal/giraffe">
-                <img src="~/css/profile_five.jpg" alt="Giraffe poking tongue out" class="image6-image" />
+            <a href="https://www.britannica.com/animal/penguin">
+                <img src="~/css/profile_one.jpg" alt="Penguin" class="image3-image" />
             </a>
-            <h3>Giraffe</h3>
-            <a href="#">Standing at around 5 meters tall, emphasised by their long necks that prance across the open woodlands of East Africa. As displayed in the image above they utilise their tough tongues, which are almost half a meter long, to eat new shooys located almost six meters from the ground. Their unique patwork of brown allows them to blend into the dappled shadows of the Savanna.</a>
+            <h3>Penguin</h3>
+            <a href="#">Flightless stocky, short-legged marine birds, found in the Southern Hemisphere are beloved by humans for their adorable appearance. Throughout years immesnse colonies have formed creating large otetials for nesting and feeding. Their contrasting feathers range from white to black across their back and bellow, their colour is rare and limited. Their form is adapt to their flightless aquatic existence used to paddle and swaddle across their habbitat.</a>
         </div>
 
         <div class="explore_video-item">
