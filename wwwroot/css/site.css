@@ -482,6 +482,21 @@ h2 {
     color: #c49e32
 }
 
+.availability_check {
+    background-color: #ffffff;
+    color: black;
+    width: 95%;
+    height: 8em;
+    margin-top: 15px;
+    border-radius: 20px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    justify-items: center;
+}
+
+.availability_check p {
+    color: #0f5132;
+}
+
 .Book_button {
     width: 250px;
     margin: 40px auto 30px;
@@ -618,6 +633,7 @@ h2 {
 
 /*Align videos with page*/
 .video-grid {
+
     display: flex;
     flex-wrap: wrap;
     gap: 20px;

@@ -63,6 +63,7 @@ namespace OS_GJ_Tutoring.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,FirstName,SurName,Time,TicketoneQty,TickettwoQty,TicketthreeQty,TicketfourQty,TicketfiveQty,TicketsixQty,TicketsevenQty,TicketeightQty,YearPass")] BookDB bookDB)
         {
+            
             if (ModelState.IsValid)
             {
                 _context.Add(bookDB);

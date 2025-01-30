@@ -115,7 +115,8 @@ namespace OS_GJ_Tutoring.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
-                    return LocalRedirect(returnUrl);
+                    return LocalRedirect($"BookDB/Index/");
+                    //returnUrl
                 }
                 if (result.RequiresTwoFactor)
                 {

@@ -43,12 +43,53 @@
 
 </nav>
 
-<img src="~/css/ticket_top.jpg" alt="panda eating bamboo" class="ticket_top"/>
-
 <div class="internal_page">
 
     <h1>RIDGET ZOO TICKETS</h1>
     <p>View our Selection of Tickets here <br />Book in Advance for the Best Prices!</p>
+
+    <div class="sort">
+        <div class="col text-end">
+            <button class="btn btn-lg p-1 no-focus-effect" type="button">
+                <i class="fa fa-thin fa-grip-lines text-light-grey"></i>
+            </button>
+            <button class="btn btn-lg p-1 no-focus-effect" type="button">
+                <i class="fa fa-thin fa-grip-horizontal text-black"></i>
+            </button>
+            <select class="form-select form-select-sm w-50 d-inline-block">
+                <option value="Recommended" selected>Recommended</option>
+                <option value="Price">Price</option>
+            </select>
+        </div>
+    </div>
+
+    <!--<div class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 65%; height: 8em; margin-bottom: -4em;">-->
+    <div class="availability_check">
+        <div class="row ps-2 pt-2 pb-0 m-0">
+            <a class="col-auto ms-3 me-2 mt-2 mb-0 p-0 text-decoration-none text-grey" href="/Home/Stay">
+                <i class="fa fa-thin fa-door-open"></i>
+                <p class="d-inline-block inter subtitle-base">Rooms</p>
+            </a>
+            <a class="col-auto ms-2 mt-2 mb-0 p-0 text-decoration-underline text-primary link-offset-3" href="#">
+                <i class="fa fa-thin fa-ticket text-decoration-underline link-offset-3"></i>
+                <p class="d-inline-block inter subtitle-base text-decoration-underline link-offset-3">Tickets</p>
+            </a>
+        </div>
+        <hr class="m-0" />
+        <div class="row">
+            <div class="col accept-policy ms-5 d-flex">
+                <div class="me-2">
+                    <label for="start_date" class="inter subtitle-base bold">Visit Date</label>
+                    <input id="start_date" type="date" class="form-control inter body-base">
+                </div>
+                <!--<i class="fa fa-thin fa-arrow-right-arrow-left align-content-center mt-4 ms-5 me-5"></i>
+                <div class="ms-2">
+                    <label for="end_date" class="inter subtitle-base bold">End Date</label>
+                    <input id="end_date" type="date" class="form-control inter body-base">
+                </div>-->
+            </div>
+        </div>
+    </div>
 
 
 
@@ -60,7 +101,10 @@
             </a>
             <h3>Zoo Ticket</h3>
             <p>Book your ticket today and explore the zoo</p>
+            <p>From £20 / pp</p>
         </div>
+        
+        
 
         <div class="video-item">
             <a href="/BookDB/Create">
@@ -68,6 +112,7 @@
             </a>
             <h3>Educational Visit</h3>
             <a href="#">Educate and Inspire the minds of the future with a class trip</a>
+            <p>From £16 / pp</p>
         </div>
 
         <div class="video-item">
@@ -76,6 +121,7 @@
             </a>
             <h3>Hotel Stays</h3>
             <a href="#">Indulge in this immersive overnight stay with exotic animals just at your doorstep</a>
+            <p>From £350 / pp</p>
         </div>
 
         <div class="video-item">
