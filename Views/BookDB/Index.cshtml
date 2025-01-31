@@ -4,10 +4,12 @@
     ViewData["Title"] = "Index";
 }
 
+<!--Page Styling-->
 <div class="ticket_content">
 
     <img src="~/css/login_image.jpg" alt="flamingo" class="ticket_image">
 
+    <!--Text Styling-->
     <div class="ticket_text">
 
         <h1>RZA Upcoming Bookings</h1>
@@ -99,12 +101,13 @@
                             @Html.DisplayFor(modelItem => item.YearPass)
                         </td>
                         <td>
+                            <!--Button Styling-->
                             <a asp-action="Edit" asp-route-id="@item.Id" style="color: #2a3f09 ;">Edit</a> |
                             <a asp-action="Details" asp-route-id="@item.Id" style="color: #2a3f09;">Details</a> |
                             <a asp-action="Delete" asp-route-id="@item.Id" style="color: #2a3f09;">Delete</a>
                         </td>
                     </tr>
-                }
+                } 
             </tbody>
         </table>
 

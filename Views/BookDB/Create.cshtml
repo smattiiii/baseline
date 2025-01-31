@@ -3,11 +3,11 @@
 @{
     ViewData["Title"] = "Create";
 }
-
+<!--Page Styling-->
 <div class="ticket_content">
 
     <img src="~/css/login_image.jpg" alt="flamingo" class="ticket_image">
-
+    <!--Text Styling-->
     <div class="ticket_text">
 
         <h1>RZA Ticket Booking</h1>
@@ -73,6 +73,8 @@
                         <input asp-for="TicketeightQty" class="form-control" />
                         <span asp-validation-for="TicketeightQty" class="text-danger"></span>
                     </div>
+                    
+                    <!--Drop Down Pass Type-->
                     <div class="form-group">
                         <label asp-for="YearPass" class="control-label">Year Pass Selection: </label>
                         @Html.DropDownListFor(Model => Model.YearPass,

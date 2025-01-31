@@ -67,6 +67,7 @@ namespace OS_GJ_Tutoring.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,FirstName,SurName,Time,TicketoneQty,TickettwoQty,TicketthreeQty,TicketfourQty,TicketfiveQty,TicketsixQty,TicketsevenQty,TicketeightQty,YearPass")] BookDB bookDB)
         {
+            //Reject Booking if date in the past
             if (bookDB.Time < DateTime.Now)
             {
                 Console.WriteLine("Invalid Date :" + bookDB.Time);
