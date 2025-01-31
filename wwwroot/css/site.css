@@ -25,13 +25,6 @@ body {
     background-color: #CACFC4;
 }
 
-/*
-    navy: #130629
-    green: 2a3f09
-    yellow: c49e32
-    #e6f2f1
-*/
-
 
 /*personalised nav bar*/
 .navbar{
@@ -343,16 +336,17 @@ h2 {
     transform: translate(-50%,-50%);
 }
 
-/* Container for content */
+/* Container for Login Content */
+/*Background Image Styling*/
 .login_content {
     position: relative;
-    left: 10%;
+    left: 0;
     top: -73px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
+    height: auto;
 }
 
 .login_text {
@@ -364,27 +358,33 @@ h2 {
 .login_image {
     position: absolute;
     top: 80px;
-    width: auto;
-    left: -220px;
-    height: 90vh;
+    width: 150%;
+    left: -200px;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
     margin: 0;
     padding: 0;
     display: block;
-    right: 0;
     z-index: 0;
     opacity: 0.6;
 }
 
-/* Container for content */
+
+
+/* Container for Register Content */
+/*Background Image Styling*/
 .register_content {
     position: relative;
-    left: 10%;
+    left: 0;
     top: -73px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
+    height: auto;
 }
 
 .register_text {
@@ -396,25 +396,32 @@ h2 {
 .register_image {
     position: absolute;
     top: 80px;
-    width: auto;
-    left: -220px;
-    height: 100vh;
+    width: 150%;
+    left: -200px;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
     margin: 0;
     padding: 0;
     display: block;
-    right: 0;
     z-index: 0;
     opacity: 0.6;
 }
 
+
+/* Container for Booking Content */
+/*Background Image Styling*/
 .book_content {
     position: relative;
+    left: 0;
     top: -73px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
+    height: auto;
 }
 
 .book_item {
@@ -427,25 +434,32 @@ h2 {
 .book_image {
     position: absolute;
     top: 80px;
-    width: auto;
-    left: -220px;
-    height: 100vh;
+    width: 150%;
+    left: -200px;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
     margin: 0;
     padding: 0;
     display: block;
-    right: 0;
     z-index: 0;
     opacity: 0.6;
 }
 
+
+/* Container for Booking Content */
+/*Background Image Styling*/
 .ticket_content {
     position: relative;
-    top: -100px;
+    left: 0;
+    top: -73px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
+    height: auto;
 }
 
 .ticket_text {
@@ -458,14 +472,16 @@ h2 {
 .ticket_image {
     position: absolute;
     top: 80px;
-    width: auto;
-    /*left: -220px;*/
-    align-content: center;
-    height: 100vh;
+    width: 150%;
+    left: -200px;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
     margin: 0;
     padding: 0;
     display: block;
-    right: 0;
     z-index: 0;
     opacity: 0.6;
 }
@@ -515,6 +531,7 @@ h2 {
 
 .Book_button a{
     color: #c49e32;
+    font-size: 20px;
 }
 
 .edu_top {
@@ -661,7 +678,7 @@ h2 {
 .video-item h3 {
     margin: 10px 0;
     font-size: 18px;
-    color: #333;
+    color: #2a3f09;
 }
 
 .video-item a {
@@ -825,7 +842,7 @@ h2 {
 .edu_video-item h3 {
     margin: 10px 0;
     font-size: 18px;
-    color: #333;
+    color: #fff;
 }
 
 .edu_video-item a {
@@ -834,6 +851,11 @@ h2 {
     font-weight: bold;
     transition: color 0.3s;
 }
+
+.edu_video-item p {
+    color: #000;
+}
+
 
 .edu_video-item a:hover {
     color: #c49e32;
@@ -894,8 +916,8 @@ h2 {
 
 .book-item a {
     text-decoration: none;
-    font-size: 35px;
-    color: #2a3f09;
+    font-size: 20px;
+    color: #c49e32;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -920,11 +942,13 @@ h2 {
     background-color: #fff;
     position: relative;
     left: 0;
-    width: auto;
+    width: 90%;
     height: auto;
     display: inline-block;
     padding: 20px;
     margin-top: 30px;
+    border-radius: 10px;
+    align-items: center;
 }
 
 .about_stay h1{

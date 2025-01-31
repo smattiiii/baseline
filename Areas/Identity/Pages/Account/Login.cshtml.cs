@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using AspNetCoreGeneratedDocument;
 
 namespace OS_GJ_Tutoring.Areas.Identity.Pages.Account
 {
@@ -114,8 +115,10 @@ namespace OS_GJ_Tutoring.Areas.Identity.Pages.Account
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
+                    //Return User to their Booking Index
                     _logger.LogInformation("User logged in.");
-                    return LocalRedirect($"BookDB/Index/");
+                    return LocalRedirect("~/BookDB/Index");
+                    //LocalRedirect("");
                     //returnUrl
                 }
                 if (result.RequiresTwoFactor)

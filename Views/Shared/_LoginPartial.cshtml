@@ -5,6 +5,13 @@
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
 {
+
+    <!--Personalise header names-->
+    <!--Add styling for lighter colour-->
+    <li class="nav-item">
+        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Book">Book</a>
+    </li>
+
     <li class="nav-item">
             <a class="nav-link text-light" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity?.Name!</a>
     </li>
@@ -16,9 +23,7 @@
 }
 else
 {
-    <!--<li class="nav-item">
-        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
-    </li>-->
+
 
     <li class="nav-item">
         <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Book">Book</a>

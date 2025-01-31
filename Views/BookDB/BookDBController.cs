@@ -12,6 +12,10 @@ namespace OS_GJ_Tutoring.Controllers
 {
     public class BookDBController : Controller
     {
+
+        [TempData]
+        public string ErrorMessage { get; set; }
+
         private readonly OS_GJ_TutoringContext _context;
 
         public BookDBController(OS_GJ_TutoringContext context)
@@ -63,7 +67,14 @@ namespace OS_GJ_Tutoring.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,FirstName,SurName,Time,TicketoneQty,TickettwoQty,TicketthreeQty,TicketfourQty,TicketfiveQty,TicketsixQty,TicketsevenQty,TicketeightQty,YearPass")] BookDB bookDB)
         {
-            
+            if (bookDB.Time < DateTime.Now)
+            {
+                Console.WriteLine("Invalid Date :" + bookDB.Time);
+                ModelState.AddModelError("Time", "Visit must be in the future");
+                return View(bookDB);
+            }
+
+
             if (ModelState.IsValid)
             {
                 _context.Add(bookDB);

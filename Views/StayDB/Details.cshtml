@@ -4,6 +4,7 @@
     ViewData["Title"] = "Details";
 }
 
+<!--Page Styling-->
 <div class="ticket_content">
 
     <img src="~/css/stay_image.jpg" alt="flamingo" class="ticket_image">
@@ -13,6 +14,7 @@
         <h1>RZA Lodge Booking Details</h1>
 
         <div>
+            <!--Text Styling-->
             <h4>StayDB</h4>
             <hr />
             <dl class="row">
@@ -55,6 +57,7 @@
             </dl>
         </div>
         <div>
+            <!--Button Styling-->
             <a asp-action="Edit" asp-route-id="@Model?.Id" style="color: #c49e32">Edit</a> |
             <a asp-action="Index" style="color: #c49e32">Back to List</a>
         </div>

@@ -4,11 +4,15 @@
     ViewData["Title"] = "Index";
 }
 
+<!--Page Styling-->
+
 <div class="ticket_content">
 
     <img src="~/css/stay_image.jpg" alt="flamingo" class="ticket_image">
 
     <div class="ticket_text">
+
+        <!--Text Styling-->
 
         <h1>Edit RZA Lodge Booking</h1>
 
@@ -62,6 +66,7 @@
                             @Html.DisplayFor(modelItem => item.RoomName)
                         </td>
                         <td>
+                            <!--Button Styling-->
                             <a asp-action="Edit" asp-route-id="@item.Id" style="color: #c49e32">Edit</a> |
                             <a asp-action="Details" asp-route-id="@item.Id" style="color: #c49e32">Details</a> |
                             <a asp-action="Delete" asp-route-id="@item.Id" style="color: #c49e32">Delete</a>

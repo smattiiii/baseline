@@ -4,7 +4,7 @@
     ViewData["Title"] = "Delete";
 }
 
-
+<!--Page styling-->
 <div class="ticket_content">
 
     <img src="~/css/stay_image.jpg" alt="flamingo" class="ticket_image">
@@ -17,6 +17,7 @@
         <div>
             <h4>StayDB</h4>
             <hr />
+            <!--Add Styling -->
             <dl class="row">
                 <dt class="col-sm-2">
                     Name:
@@ -59,6 +60,7 @@
             <form asp-action="Delete">
                 <input type="hidden" asp-for="Id" />
                 <input type="submit" value="Delete" class="btn btn-danger" /> |
+                <!--Button Styling-->
                 <a asp-action="Index" style="color: #c49e32">Back to List</a>
             </form>
         </div>

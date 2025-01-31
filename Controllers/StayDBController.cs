@@ -44,10 +44,12 @@ namespace OS_GJ_Tutoring.Controllers
         }
 
         // GET: StayDB/Create
+        //Add Options for Lodge Types
         public IActionResult Create()
         {
             ViewBag.RoomNames = new List<String>
             {
+                //Lodge Names
                 "Lion Lodge",
                 "Giraffe Lodge",
                 "Leopard Lodge",
